@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/space_ship_floating_sound.mp3-ceb273406b5ebc54856f6fc1cb7afb17.mp3str"
+
+[deps]
+
+source_file="res://Assets/Sounds/space_ship_floating_sound.mp3"
+dest_files=[ "res://.import/space_ship_floating_sound.mp3-ceb273406b5ebc54856f6fc1cb7afb17.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

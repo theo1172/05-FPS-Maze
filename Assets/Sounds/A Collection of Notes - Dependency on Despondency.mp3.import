@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/A Collection of Notes - Dependency on Despondency.mp3-721e5b3fc46f9c4968ebb9b7cc5364e7.mp3str"
+
+[deps]
+
+source_file="res://Assets/Sounds/A Collection of Notes - Dependency on Despondency.mp3"
+dest_files=[ "res://.import/A Collection of Notes - Dependency on Despondency.mp3-721e5b3fc46f9c4968ebb9b7cc5364e7.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

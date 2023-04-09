@@ -1,0 +1,44 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Assets/Ground.tres" type="Material" id=1]
+[ext_resource path="res://Assets/Textures/pattern_41/T_25_Normal.tga" type="Texture" id=3]
+[ext_resource path="res://Assets/Textures/pattern_41/T_25_phongDiffuse.tga" type="Texture" id=4]
+[ext_resource path="res://Assets/Textures/pattern_41/T_25_phongSpecular.tga" type="Texture" id=5]
+
+[sub_resource type="SpatialMaterial" id=2]
+albedo_texture = ExtResource( 4 )
+metallic_texture = ExtResource( 5 )
+normal_enabled = true
+normal_scale = 1.0
+normal_texture = ExtResource( 3 )
+
+[sub_resource type="CubeMesh" id=3]
+material = ExtResource( 1 )
+size = Vector3( 1, 1, 1 )
+
+[sub_resource type="ConvexPolygonShape" id=4]
+points = PoolVector3Array( 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5 )
+
+[node name="Mesh_Library" type="Spatial"]
+
+[node name="Ground_Block2" type="CSGBox" parent="."]
+width = 1.0
+height = 1.0
+depth = 1.0
+material = ExtResource( 1 )
+
+[node name="Wall_Block" type="CSGBox" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.82762 )
+width = 1.0
+height = 1.0
+depth = 1.0
+material = SubResource( 2 )
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.16724, -0.432927, 0 )
+mesh = SubResource( 3 )
+
+[node name="StaticBody" type="StaticBody" parent="MeshInstance"]
+
+[node name="CollisionShape" type="CollisionShape" parent="MeshInstance/StaticBody"]
+shape = SubResource( 4 )

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/HoliznaPATREON - Ambience.mp3-a15fab94a1ce41f18c390dcd9c61a7e8.mp3str"
+
+[deps]
+
+source_file="res://Assets/Sounds/HoliznaPATREON - Ambience.mp3"
+dest_files=[ "res://.import/HoliznaPATREON - Ambience.mp3-a15fab94a1ce41f18c390dcd9c61a7e8.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
